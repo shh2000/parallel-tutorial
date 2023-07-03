@@ -75,7 +75,7 @@ def inference(rank):
 
         print("Rank " + str(rank) + ": " + "Result Verified" if torch.
               allclose(y_pred, y_truth, rtol=0.01) else "Error in Result")
-    
+
     dist.barrier()
 
 

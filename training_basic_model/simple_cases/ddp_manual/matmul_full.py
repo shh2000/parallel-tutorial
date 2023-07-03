@@ -63,7 +63,7 @@ def inference(rank):
                             sampler=distSampler(dataset))
 
     model = Matmul().to(rank)
-    
+
     for param in model.parameters():
         dist.broadcast(param.data, src=0)
 
