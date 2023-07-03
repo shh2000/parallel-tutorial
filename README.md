@@ -24,9 +24,9 @@ Cases:
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">train</td>
-    <td rowspan="2">simple</td>
-    <td rowspan="2">matmul</td>
+    <td rowspan="3">train</td>
+    <td rowspan="3">simple</td>
+    <td rowspan="3">matmul</td>
     <td>None</td>
     <td>/</td>
     <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/matmul_full.py">see code</a></td>
@@ -36,5 +36,11 @@ Cases:
     <td>torch.DDP()</td>
     <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/ddp_manual/matmul_full.py">see code</a></td>
   </tr>
+    <tr>
+    <td>1D Tensor</td>
+    <td>/</td>
+    <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/tp_1d_manual/matmul_full.py">see code</a></td>
+  </tr>
 </tbody>
 </table>
+
