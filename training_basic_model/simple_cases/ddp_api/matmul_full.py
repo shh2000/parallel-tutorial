@@ -13,7 +13,7 @@ datasize = 8000
 batchsize = 4
 logfreq = 50
 
-num_epochs = 20
+num_epochs = 30
 base_lr = 0.01
 lr_gamma = 0.1
 lr_step = 5
@@ -24,10 +24,6 @@ class Matmul(nn.Module):
         super(Matmul, self).__init__()
         self.fc1 = nn.Linear(inout_dim, hidden_size)
         self.fc2 = nn.Linear(hidden_size, inout_dim)
-        self.fc1.weight.data.fill_(1.0)
-        self.fc2.weight.data.fill_(1.0)
-        self.fc1.bias.data.fill_(0.0)
-        self.fc2.bias.data.fill_(0.0)
 
     def forward(self, x):
         x = self.fc1(x)
@@ -74,6 +70,7 @@ def inference(rank):
     
     model.train()
     for epoch in range(num_epochs):
+        dataloader.sampler.set_epoch(epoch)
         for step, x in enumerate(dataloader):
             optimizer.zero_grad()
     
