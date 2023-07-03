@@ -11,40 +11,30 @@ Some simple cases in train_basic_model has xx_forward.py, contains only forward(
 
 Cases:
 
-```html
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-baqh">catagory</th>
-    <th class="tg-baqh">task</th>
-    <th class="tg-baqh">case</th>
-    <th class="tg-baqh">parallel type</th>
-    <th class="tg-baqh">api</th>
-    <th class="tg-baqh">manual with readme</th>
+    <th>catagory</th>
+    <th>task</th>
+    <th>case</th>
+    <th>parallel type</th>
+    <th>api</th>
+    <th>manual with readme</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-baqh" rowspan="2">train</td>
-    <td class="tg-baqh" rowspan="2">simple</td>
-    <td class="tg-baqh" rowspan="2">matmul</td>
-    <td class="tg-baqh">None</td>
-    <td class="tg-baqh">/</td>
-    <td class="tg-baqh">https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/matmul_full.py</td>
+    <td rowspan="2">train</td>
+    <td rowspan="2">simple</td>
+    <td rowspan="2">matmul</td>
+    <td>None</td>
+    <td>/</td>
+    <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/matmul_full.py">see code</a></td>
   </tr>
   <tr>
-    <td class="tg-baqh">data</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh">https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/ddp_manual/matmul_full.py</td>
+    <td>data</td>
+    <td>torch.DDP()</td>
+    <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/ddp_manual/matmul_full.py">see code</a></td>
   </tr>
 </tbody>
 </table>
-```
