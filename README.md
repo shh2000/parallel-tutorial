@@ -24,9 +24,9 @@ Cases:
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">train</td>
-    <td rowspan="3">simple</td>
-    <td rowspan="3">matmul</td>
+    <td rowspan="4">train</td>
+    <td rowspan="4">simple</td>
+    <td rowspan="4">matmul</td>
     <td>None</td>
     <td>/</td>
     <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/matmul_full.py">see code</a></td>
@@ -41,6 +41,13 @@ Cases:
     <td>/</td>
     <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/tp_1d_manual/matmul_full.py">see code</a></td>
   </tr>
+    </tr>
+    <tr>
+    <td>Pipeline</td>
+    <td>torch Pipe()</td>
+    <td>/</td>
+  </tr>
 </tbody>
 </table>
+
 
