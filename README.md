@@ -24,8 +24,8 @@ Cases:
 </thead>
 <tbody>
   <tr>
-    <td rowspan="4">train</td>
-    <td rowspan="4">simple</td>
+    <td rowspan="5">train</td>
+    <td rowspan="5">simple</td>
     <td rowspan="4">matmul</td>
     <td>None</td>
     <td>/</td>
@@ -47,7 +47,15 @@ Cases:
     <td>torch Pipe()</td>
     <td>/</td>
   </tr>
+</tr>
+    <tr>
+    <td>C=A*B</td>
+    <td>2D-Tensor</td>
+    <td>/</td>
+    <td><a href="https://github.com/shh2000/parallel-tutorial/blob/main/training_basic_model/simple_cases/tp_2d_manual/matmul_full.py">see code</a></td>
+  </tr>
 </tbody>
 </table>
+
 
 
